@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="emerald">
-      <body className={inter.className}>
+      <body className='h-fit min-h-screen bg-pink-200'>
       <Nav/>
         {children}
         </body>
