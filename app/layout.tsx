@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="emerald">
-      <body className='h-fit min-h-screen bg-pink-200'>
+      <body className='h-fit min-h-screen'>
       <Nav/>
         {children}
         </body>
