@@ -1,7 +1,7 @@
 'use client'
 export default function Nav(){
     return(
-            <div className="navbar bg-base-100 fixed z-10 shadow-md">
+            <nav className="navbar bg-base-100 fixed z-10 shadow-md">
                 <div className="flex-1">
                     <a className="text-xl font-bold cursor-pointer">Crafty Books</a>
                 </div>
@@ -43,6 +43,6 @@ export default function Nav(){
                         </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
     )
 }
