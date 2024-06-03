@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="emerald">
-      <body className='h-fit min-h-screen'>
+      <body className='w-screen h-auto overflow-hidden'>
       <Nav/>
         {children}
         </body>

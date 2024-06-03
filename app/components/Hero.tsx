@@ -10,16 +10,17 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from "embla-carousel-autoplay";
 export default function Hero(){
     const [emblaRef, emblaApi] = useEmblaCarousel({loop: true}, [Autoplay()])
-
+    const styled_slider ="embla__slide h-full fill"
     return(
-
-        <div className="embla w-screen h-1/2 overflow-hidden box-border" ref={emblaRef}>
+    <div className="w-screen h-3/4">
+        <div className="embla w-screen h-full overflow-hidden box-border" ref={emblaRef}>
             <div className="embla__container h-full">
-                    <Image className="embla__slide h-full fill" src={hero1} alt="hero image" style={{objectFit:"contain"}} />
-                    <Image className="embla__slide h-full fill" src={hero2} alt="hero image" style={{objectFit:"contain"}} />
-                    <Image className="embla__slide h-full fill" src={hero3} alt='hero image' style={{objectFit:"contain"}} />
-                    <Image className="embla__slide h-full fill" src={hero4} alt='hero image' style={{objectFit:"contain"}} />
+                    <Image className={styled_slider} src={hero1} alt="hero image" style={{objectFit:"contain"}} />
+                    <Image className={styled_slider} src={hero2} alt="hero image" style={{objectFit:"contain"}} />
+                    <Image className={styled_slider} src={hero3} alt='hero image' style={{objectFit:"contain"}} />
+                    <Image className={styled_slider} src={hero4} alt='hero image' style={{objectFit:"contain"}} />
             </div>
         </div>
+    </div>
     )
 }
