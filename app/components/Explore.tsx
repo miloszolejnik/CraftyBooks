@@ -9,19 +9,16 @@ import book3 from '@/public/book-3.jpg'
 import book4 from '@/public/book-4.jpg'
 
 export default function Explore(){
-    const [emblaRef] = UseEmblaCarousel()
+    const [emblaRef] = UseEmblaCarousel({loop: true})
 
     const styledEmablaSlide ="embla__slide max-w-screen justify-center align-middle flex"
 
     return(
-        <div className="flex flex-col text-center">
-            <div className="align-middle justify-items-center my-12">
-                <h1 className="text-3xl font-semibold">Przykładowe Prace</h1>
-            </div>
+        <section className="flex flex-col text-center">
             <div className="embla">
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container w-screen">
-                        <div className="embla__slide max-w-screen justify-center align-middle flex">
+                        <div className={styledEmablaSlide}>
                             <ItemCard src={book1} name='Klasyka Literatury' />
                         </div>
                         <div className={styledEmablaSlide}>
@@ -37,6 +34,6 @@ export default function Explore(){
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }
