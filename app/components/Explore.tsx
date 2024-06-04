@@ -11,8 +11,9 @@ import book4 from '@/public/book-4.jpg'
 export default function Explore(){
     const [emblaRef] = UseEmblaCarousel({loop: true})
 
-    const styledEmablaSlide ="embla__slide max-w-screen justify-center align-middle flex"
-
+    const styledEmablaSlide ="embla__slide max-w-screen justify-center align-middle flex explore"
+        // flex: 0 0 var(--slide-size);
+        // min-width: 0;
     return(
         <section className="flex flex-col text-center">
             <div className="embla">
